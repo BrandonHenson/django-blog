@@ -11,7 +11,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -22,7 +22,7 @@ SECRET_KEY = '@)-4t7s)fs6s^zf4)5lwz$3sdrhjdi#cv(+35qfu&y*-=$oe=u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['py230-ubuntu-00501.westus.cloudapp.azure.com']
 
 
 # Application definition
@@ -120,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'root /home/py230admin/django-blog/static/'
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
