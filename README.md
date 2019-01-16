@@ -1,1 +1,1 @@
-# django-blog
+# Djangoblog2Lesson8
